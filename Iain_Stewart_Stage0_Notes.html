@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8"/>
+      <title>Stage 0 and 1 Notes</title>
+      <link rel="stylesheet" href="notes-style.css">
+   </head>
+   <body>
+      <div class="TOC">
+         <h1>Table of Contents</h1>
+         <ol>
+            <li class = "TOC lesson"><a href="#lesson-1">Lesson 1: The Basics of the Web and HTML</a>
+               <ul>
+                  <li><a href="#lesson-1.1">How The Web Works</a></li>
+                  <li><a href="#lesson-1.2">HTML</a></li>
+                  <li><a href="#lesson-1.3">HTML Tags</a></li>
+                  <li><a href="#lesson-1.4">Computers Are Stupid</a></li>
+                  <li><a href="#lesson-1.5">Inline vs. Block Elements</a></li>
+               </ul>
+            </li>
+            <li class = "TOC lesson"><a href="#lesson-2">Lesson 2: Creating a Structured Document with HTML</a>
+               <ul>
+                  <li><a href="#lesson-2.1">HTML vs. CSS</a></li>
+                  <li><a href="#lesson-2.2">Document Object Model (DOM)</a></li>
+                  <li><a href="#lesson-2.3">Developer Tools</a></li>
+                  <li><a href="#lesson-2.4">Everything Is A Box</a></li>
+               </ul>
+            </li>
+            <li class = "TOC lesson"><a href="#lesson-3">Lesson 3: Adding CSS Style to HTML Structure</a>
+               <ul>
+                  <li><a href="#lesson-3.1">Linking to CSS Document</a></li>
+                  <li><a href="#lesson-3.2">Avoiding Repetition</a></li>
+                  <li><a href="#lesson-3.3">Div vs. Span</a></li>
+                  <li><a href="#lesson-3.4">CSS Selectors</a></li> <li><a href="#lesson-3.5">IDs vs. Classes</a></li>
+                  <li><a href="#lesson-3.6">Code, Test, Refine</a></li>
+                  <li><a href="#lesson-3.7">Flexbox</a></li>
+                  <li><a href="#lesson-3.8">Box Model</a></li> <li><a href="#lesson-3.9">Other CSS Tips</a></li>
+                  <li><a href="#lesson-3.10">HTML/CSS Resources</a></li>
+               </ul>
+            </li>
+         </ol>
+      </div>
+      <div class="complete_notes">
+         <h1>Important Concepts</h1>
+         <div class="lesson">
+         <h2 id="lesson-1">Lesson 1: The Basics of the Web and HTML</h2>
+         <div>
+            <h4 class="concept" id="lesson-1.1">How The Web Works</h4>
+               <div class="concept-description">
+                  The <em>world-wide web</em> (www) is a network of computers that communicate with each other over a very wide area. The internet uses a protocol called <em>HTTP</em> to communicate with you, your browser and servers. When a user enters a website their computer sends an <em>HTTP request</em> to a <em>server</em> (computers that host the files that make up the web), which then finds and returns the relevant files. The user’s <em>web browser</em> then uses the returned files to display content to the user.
+               </div>
+         </div>
+         <div>
+            <h4 class="concept" id="lesson-1.2">HTML</h4>
+               <div class="concept-description">
+                  HTML stands for <em>HyperText Markup Language</em>.  HTML documents make up most of the content on the web. They can contain <em>text content, markup, references to other documents (images, videos etc) and links to other pages</em>. HTML documents are made up of HTML <em>elements</em>, this refers to everything within a set of opening and closing tags.
+               </div>
+         </div>
+         <div>
+            <h4 class="concept" id="lesson-1.3">HTML Tags</h4>
+               <div class="concept-description">
+                  Markup consists of <em>tags</em>, which can also be nested. Some tags (called "void" tags) do not require a closing tag.
+               </div>
+         </div>
+         <div>
+            <h4 class="concept" id="lesson-1.4">Computers Are Stupid</h4>
+               <div class="concept-description">
+                  They cannot think for themselves and need to be told what to do very precisely by the programmer. They interpret instructions very literally and so simple errors, such as a missing “>” in a tag, can cause a program not to run correctly. Programmers therefore need to write <em>exactly</em> the way a computer understands (also known as writing with correct "syntax").
+               </div>
+         </div>
+         <div>
+            <h4 class="concept" id="lesson-1.5">Inline vs. Block Elements</h4>
+               <div class="concept-description">
+                  HTML elements are either <em>inline</em> or <em>block</em>. Block elements form an "invisible box" around the content inside of them.
+               </div>
+         </div>
+         </div>
+         <div class="lesson">
+            <h2 id="lesson-2">Lesson 2: Creating a Structured Document with HTML</h2>
+            <div>
+               <h4 class="concept" id="lesson-2.1">HTML vs. CSS</h4>
+                  <div class="concept-description">
+                     <em>HTML</em> provides the <em>structure</em> of websites, whilst <em>Cascading Style Sheets (CSS)</em> describe the <em>look and formatting</em> of a document written in a markup language. The browser turns HTML tags into elements which form a <em>tree</em>. This tree-structure exists because HTML elements can have other elements inside of them. The structure is shown in the HTML document using <em>indentation</em>.
+                  </div>
+            </div>
+            <div>
+               <h4 class="concept" id="lesson-2.2">Document Object Model (DOM)</h4>
+                  <div class="concept-description">
+                     When programmers mention the "DOM", they are referring to the <em>Document Object Model</em>, which refers to the <em>tree-like structure</em> of a page. DOM is a cross-platform and language-independent method for representing and interacting with objects in HTML. The nodes of every document are organized into a tree structure, which is known as the <em>DOM tree</em>.
+                  </div> 
+            </div>
+            <div>
+               <h4 class="concept" id="lesson-2.3">Developer Tools</h4>
+                  <div class="concept-description">
+                     <em>Developer tools</em> can be used to investigate the structure of existing websites, which is displayed using this tree-like structure.
+                  </div>
+            </div>
+            <div>
+               <h4 class="concept" id="lesson-2.4">Everything Is A Box</h4>
+                  <div class="concept-description">
+                     Everything on a webpage is actually a <em>box</em>. When designing a webpage, move from the big boxes down to smaller boxes, leaving minor details until last. Boxes should be defined using <em>div tags</em>. To apply the appropriate style to each one, it is best to give each element a <em>class attribute</em> (these are just like labels on boxes when moving home). You should use class names that make sense to you in order to better understand the purpose of the code.
+                  </div>
+            </div>
+         </div>
+         <div class="lesson">
+            <h2 id="lesson-3">Lesson 3: Adding CSS Style to HTML Structure</h2>
+            <div>
+               <h4 class="concept" id="lesson-3.1">Linking to CSS Document</h4>
+                  <div class="concept-description">
+                     You should <em>link</em> the CSS document to the html document within the head tag, this makes the CSS easier to maintain. The format for this should be:<br>
+                     &lt;head&gt;<br>
+                     &lt;link rel=&quot;stylesheet&quot; href=&quot;css_document.css&quot;&gt;<br>
+                     &lt;/head&gt;<br>
+                     You can also put the style information between style tags within the head section, although this should usually only be used for very small projects.
+                  </div>
+            </div>
+            <div>
+               <h4 class="concept" id="lesson-3.2">Avoiding Repetition</h4>
+                  <div class="concept-description">
+                     An important aspect of CSS is that it allows programmers to <em>avoid repetition</em>, and inheritance of style properties allows developers to write less CSS code. In the long run this should improve the <em>maintainability</em> of the code, and enables the programmer to make changes to the style much more <em>quickly and efficiently</em>. Two other key aspects were mentioned in the lectures: <em>increasing consistency</em> and <em>minimizing errors</em>. Consistency is improved because related groups of elements can have identical styling values applied to them by assigning them to the same class. Errors are also minimized for similar reasons; if styles were applied to each element seperately then the programmer would have to carry out this repetitive task each time they want to update styling. Humans are not particularly good at boring, repetitive tasks (although computers are!) and so they are likely to make a number of errors during this process. 
+                  </div>
+            </div>
+            <div>
+               <h4 class="concept" id="lesson-3.3">Div vs. Span</h4>
+                  <div class="concept-description">
+                     A <em>div is a block-level element</em>, it takes up the full width of the page, pushes other content further down and is used to control layout. A <em>span is an inline element</em> used for things like text decoration, and doesn't affect the layout of other content. Divs and spans are discussed in detail in this <a href="http://bit.ly/1FbYnF5">video</a>
+                  </div>
+            </div>
+            <div>
+               <h4 class="concept" id="lesson-3.4">CSS Selectors</h4>
+                  <div class="concept-description">
+                     You use a <em>selector</em> in CSS to define what elements of the page a particular style will apply to, you can also apply different styles to classes using the <em>.class_name selector</em> method. The format of the code to apply style is <em>"selector {property: value;}"</em>.
+                  </div>
+            </div>
+            <div>
+               <h4 class="concept" id="lesson-3.5">IDs vs. Classes</h4>
+                  <div class="concept-description">
+                     <em>IDs</em> can be used to uniquely identify a single element within the webpage.<em>Classes</em> are used to style a group of elements, this reduces repetition within the code.
+                  </div>
+            </div>
+            <div>
+               <h4 class="concept" id="lesson-3.6">Code, Test, Refine</h4>
+                  <div class="concept-description">
+                     When developing a website it is best to follow a process of <em>code, test, refine</em>. 
+                     <ol>
+                     <li>Try to get the structure of the page right by visually boxifying it (create structure using divs etc)</li>
+                     <li>In order to see the structure better it is often useful to add a margin and a red solid border to all elements initially.</li>
+                     <li>Work on the tags (add heading tags etc)</li>
+                     <li>Think about the size of the boxes, where to position them on the screen and apply styles (from biggest to smallest)</li>
+                     <li>Polish smaller details until complete</li>
+                     </ol>
+                  </div>
+            </div>
+            <div>
+               <h4 class="concept" id="lesson-3.7">Flexbox</h4>
+                  <div class="concept-description">
+                     <em>Flexbox</em> can be used to display multiple elements (including divs) inline with each other. To do this you define a flex container by changing the display attribute of the parent container in CSS to value flex (ie. display: flex;).
+                  </div>
+            </div>
+            <div>
+               <h4 class="concept" id="lesson-3.8">Box Model</h4>
+                  <div class="concept-description">
+                     Content is surrounded by <em>padding</em>, a <em>border</em> and a <em>margin</em> respectively. The width of an element is calculated by adding the width of the content, left border, left padding, right padding and right border together.
+                  </div>
+            </div>
+             <div>
+               <h4 class="concept" id="lesson-3.9">Other CSS Tips</h4>
+                  <div class="concept-description">
+                     <ol>   
+                        <li>In CSS the most specific rule is applied to every element</li>
+                        <li>To help deal with sizing issues related to elements you should set sizes in terms of percentages rather than pixels, or set the box-sizing attribute to border-box for every element. </li>
+                        <li>When using images it is good practice to make a folder called images within your project folder.</li>
+                     </ol>
+                  </div>
+            </div>
+            <div>
+               <h4 class="concept" id="lesson-3.10">HTML/CSS Resources</h4>
+                  <div class="concept-description">
+                     The CSS documentation can be found <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">here</a>. A lot of other useful resources can be found <a href="http://learn-2-code.appspot.com/additional_resources/">here</a>
+                  </div>
+            </div>
+         </div>
+      </div>   
+   </body>
+</html>

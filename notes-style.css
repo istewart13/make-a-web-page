@@ -1,0 +1,55 @@
+/*
+* {
+	margin: 8px;
+	border: 2px solid red;
+}
+*/
+
+body {
+	font-family: Calibri;
+	background-color: #9BC4E2;
+	padding: 20px 20px 20px 20px;
+	max-width: 2000px;
+}
+
+p {
+	margin: 15px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 4em;
+	color: maroon;
+}
+
+h2 {
+	color: white;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+h4 {
+	color: #123652;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.concept_description {
+	text-align: left;
+}
+
+.complete_notes {
+	background-color: #87CEFF;
+	border-radius: 30px;
+	padding: 0px 30px 30px 30px;
+	font-size: 1.2em;
+}
+
+.TOC {
+	font-size: 1.2em;
+	font-weight: bold;
+}
